@@ -1,0 +1,11 @@
+%form{:action => "", :method => "POST"}
+	%p
+		%input{:name => "tweet",:id => "tweet", :cols => 40, :rows => 4}
+	%p
+		%input{:type => "submit" , :value => "Send"}
+%div#main
+	%article
+		%dl
+			-@twitter.friends_timeline.each do |twit|
+				%dt= twit.user.name
+				%dd= twit.text

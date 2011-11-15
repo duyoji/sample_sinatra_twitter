@@ -1,0 +1,55 @@
+body{
+	width: 960px;
+	margin: 0 auto;
+}
+
+li.underline {
+	border-bottom: solid;	
+	border-width: 1px;	
+}
+
+a.select_3_button{
+	height:20px;	
+	text-align: center;
+}
+
+a:hover {
+  color: #00438a;
+  text-decoration: underline;
+}
+
+#paging{
+	text-align: center;
+}
+
+#paging li{   
+  display: inline;  
+  margin: 0 10px 0 0;  
+}
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+
+section{
+	height: 280px;
+	width: 320px;
+	float:left;
+}
+
+.clearfix:after{
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	clear:both;
+	height:0;
+}
+
+#global_footer{
+	text-align: center;
+}

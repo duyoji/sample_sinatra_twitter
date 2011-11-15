@@ -1,0 +1,18 @@
+!!! XML
+
+%html
+	%head
+		%title= @title
+		%meta{:"http-equiv"=>"Content-Type", :content=>"text/html", :charset=>"utf-8"}
+		%link{:rel=>"stylesheet", :type=>"text/css", :href=>"./css/bootstrap.css"}
+		%link{:rel=>"stylesheet", :type=>"text/css", :href=>"./css/base.css"}    
+		%script{:type => 'text/javascript', :src => "http://code.jquery.com/jquery-1.6.3.min.js"}
+		%script{:type => 'text/javascript', :src => "./js/base.js"}
+		%script{:type => 'text/javascript', :src => "./js/rakuten.js"}
+	%body
+		%header
+			%h1 
+				%a{:href => "/"}= @title
+		!= yield
+-#%footer#global_footer
+/%p&copy;&nbsp;2009-<script>year();</script>&nbsp;Galapagos&nbsp;All&nbsp;Rights&nbsp;Reserved.
